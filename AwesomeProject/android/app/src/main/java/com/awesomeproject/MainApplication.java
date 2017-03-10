@@ -32,7 +32,7 @@ public class MainApplication extends Application implements ReactApplication {
 
       protected @Nullable
       String getBundleAssetName() {
-          return "index.old.bundle";
+          return "index.android.bundle";
       }
   };
 
