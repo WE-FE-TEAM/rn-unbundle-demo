@@ -40,7 +40,7 @@ public class LoadFileModule extends ReactContextBaseJavaModule {
         ReactNativeHost host = app.getReactNativeHost();
         CatalystInstanceImpl catalystInstance = (CatalystInstanceImpl)host.getReactInstanceManager().getCurrentReactContext().getCatalystInstance();
 
-        String path2 = "assets://test.js";
+        String path2 = "assets://fund.android.js";
 
         try{
             Method method = CatalystInstanceImpl.class.getDeclaredMethod("jniLoadScriptFromAssets", new Class[]{AssetManager.class, String.class});
