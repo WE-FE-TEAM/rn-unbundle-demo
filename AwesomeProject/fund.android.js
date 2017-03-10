@@ -12,20 +12,6 @@ import {
   View
 } from 'react-native';
 
-import { NativeModules } from 'react-native';
-
-const LoadFileHelper = NativeModules.LoadFileHelper;
-
-
-function onClick(){
-  console.log('11111111');
-  LoadFileHelper.loadFile('加载文件的URL');
-}
-
-function showFundPage(){
-  console.log('before showFundPage');
-  LoadFileHelper.openFundPage();
-}
 
 export default class AwesomeProject extends Component {
   render() {
@@ -38,21 +24,12 @@ export default class AwesomeProject extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          基金页面, 动态增量加载的JS bundle
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
+          just for testing
         </Text>
 
-        <Text style={ btnStyle } onPress={ onClick }>点击加载基金的bundle文件</Text>
-
-        <View>
-          <Text style={ btnStyle } onPress={ showFundPage }>打开 基金  页面</Text>
-        </View>
       </View>
     );
   }
@@ -77,4 +54,7 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('fund', () => AwesomeProject);
+
+
+console.log('基金 bundle 加载完成!!!');

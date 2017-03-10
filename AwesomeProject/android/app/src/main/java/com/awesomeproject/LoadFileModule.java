@@ -1,6 +1,9 @@
 package com.awesomeproject;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
+import android.test.ActivityTestCase;
 import android.util.Log;
 
 import com.facebook.react.ReactApplication;
@@ -46,5 +49,19 @@ public class LoadFileModule extends ReactContextBaseJavaModule {
         }catch(Exception e){
             Log.e(TAG, e.getMessage(), e);
         }
+    }
+
+    @ReactMethod
+    public void openFundPage(){
+        final Activity activity = getCurrentActivity();
+
+        final Intent intent = new Intent(activity, FundActivity.class);
+
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                activity.startActivity(intent);
+            }
+        });
     }
 }
