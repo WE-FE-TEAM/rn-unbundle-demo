@@ -1,0 +1,1175 @@
+{
+  "modules": {
+    "AwesomeProject/index.android.js": {
+      "id": 0
+    },
+    "react/react.js": {
+      "id": 12
+    },
+    "react/lib/React.js": {
+      "id": 13
+    },
+    "object-assign/index.js": {
+      "id": 14
+    },
+    "react/lib/ReactChildren.js": {
+      "id": 15
+    },
+    "react/lib/PooledClass.js": {
+      "id": 16
+    },
+    "react/lib/reactProdInvariant.js": {
+      "id": 17
+    },
+    "fbjs/lib/invariant.js": {
+      "id": 18
+    },
+    "react/lib/ReactElement.js": {
+      "id": 19
+    },
+    "react/lib/ReactCurrentOwner.js": {
+      "id": 20
+    },
+    "fbjs/lib/warning.js": {
+      "id": 21
+    },
+    "fbjs/lib/emptyFunction.js": {
+      "id": 22
+    },
+    "react/lib/canDefineProperty.js": {
+      "id": 23
+    },
+    "react/lib/ReactElementSymbol.js": {
+      "id": 24
+    },
+    "react/lib/traverseAllChildren.js": {
+      "id": 25
+    },
+    "react/lib/getIteratorFn.js": {
+      "id": 26
+    },
+    "react/lib/KeyEscapeUtils.js": {
+      "id": 27
+    },
+    "react/lib/ReactComponent.js": {
+      "id": 28
+    },
+    "react/lib/ReactNoopUpdateQueue.js": {
+      "id": 29
+    },
+    "fbjs/lib/emptyObject.js": {
+      "id": 30
+    },
+    "react/lib/ReactPureComponent.js": {
+      "id": 31
+    },
+    "react/lib/ReactClass.js": {
+      "id": 32
+    },
+    "react/lib/ReactPropTypeLocationNames.js": {
+      "id": 33
+    },
+    "react/lib/ReactDOMFactories.js": {
+      "id": 34
+    },
+    "react/lib/ReactElementValidator.js": {
+      "id": 35
+    },
+    "react/lib/ReactComponentTreeHook.js": {
+      "id": 36
+    },
+    "react/lib/checkReactTypeSpec.js": {
+      "id": 37
+    },
+    "react/lib/ReactPropTypesSecret.js": {
+      "id": 38
+    },
+    "react/lib/ReactPropTypes.js": {
+      "id": 39
+    },
+    "react/lib/ReactVersion.js": {
+      "id": 40
+    },
+    "react/lib/onlyChild.js": {
+      "id": 41
+    },
+    "react-native/Libraries/react-native/react-native.js": {
+      "id": 42
+    },
+    "ActivityIndicator": {
+      "id": 43
+    },
+    "ColorPropType": {
+      "id": 44
+    },
+    "normalizeColor": {
+      "id": 45
+    },
+    "NativeMethodsMixin": {
+      "id": 46
+    },
+    "ReactNativeAttributePayload": {
+      "id": 47
+    },
+    "ReactNativePropRegistry": {
+      "id": 48
+    },
+    "deepDiffer": {
+      "id": 49
+    },
+    "flattenStyle": {
+      "id": 50
+    },
+    "TextInputState": {
+      "id": 51
+    },
+    "Platform": {
+      "id": 52
+    },
+    "NativeModules": {
+      "id": 53
+    },
+    "BatchedBridge": {
+      "id": 54
+    },
+    "MessageQueue": {
+      "id": 55
+    },
+    "ErrorUtils": {
+      "id": 56
+    },
+    "JSTimersExecution": {
+      "id": 57
+    },
+    "Systrace": {
+      "id": 58
+    },
+    "ReactDebugTool": {
+      "id": 59
+    },
+    "ReactInvalidSetStateWarningHook": {
+      "id": 60
+    },
+    "ReactHostOperationHistoryHook": {
+      "id": 61
+    },
+    "fbjs/lib/ExecutionEnvironment.js": {
+      "id": 62
+    },
+    "fbjs/lib/performanceNow.js": {
+      "id": 63
+    },
+    "fbjs/lib/performance.js": {
+      "id": 64
+    },
+    "JSTimers": {
+      "id": 65
+    },
+    "parseErrorStack": {
+      "id": 66
+    },
+    "stacktrace-parser/index.js": {
+      "id": 67
+    },
+    "stacktrace-parser/lib/stacktrace-parser.js": {
+      "id": 68
+    },
+    "deepFreezeAndThrowOnMutationInDev": {
+      "id": 69
+    },
+    "stringifySafe": {
+      "id": 70
+    },
+    "HeapCapture": {
+      "id": 71
+    },
+    "SamplingProfiler": {
+      "id": 72
+    },
+    "HMRClient": {
+      "id": 73
+    },
+    "WebSocket": {
+      "id": 74
+    },
+    "NativeEventEmitter": {
+      "id": 75
+    },
+    "EventEmitter": {
+      "id": 76
+    },
+    "EmitterSubscription": {
+      "id": 77
+    },
+    "EventSubscription": {
+      "id": 78
+    },
+    "EventSubscriptionVendor": {
+      "id": 79
+    },
+    "RCTDeviceEventEmitter": {
+      "id": 80
+    },
+    "StatusBarIOS": {
+      "id": 81
+    },
+    "Keyboard": {
+      "id": 82
+    },
+    "dismissKeyboard": {
+      "id": 83
+    },
+    "AppState": {
+      "id": 84
+    },
+    "logError": {
+      "id": 85
+    },
+    "WebSocketEvent": {
+      "id": 86
+    },
+    "binaryToBase64": {
+      "id": 87
+    },
+    "base64-js/index.js": {
+      "id": 88
+    },
+    "event-target-shim/lib/event-target.js": {
+      "id": 89
+    },
+    "event-target-shim/lib/commons.js": {
+      "id": 90
+    },
+    "event-target-shim/lib/custom-event-target.js": {
+      "id": 91
+    },
+    "event-target-shim/lib/event-wrapper.js": {
+      "id": 92
+    },
+    "HMRLoadingView": {
+      "id": 93
+    },
+    "ToastAndroid": {
+      "id": 94
+    },
+    "defineLazyObjectProperty": {
+      "id": 95
+    },
+    "UIManager": {
+      "id": 96
+    },
+    "findNodeHandle": {
+      "id": 97
+    },
+    "ReactInstanceMap": {
+      "id": 98
+    },
+    "React": {
+      "id": 99
+    },
+    "StyleSheet": {
+      "id": 100
+    },
+    "PixelRatio": {
+      "id": 101
+    },
+    "Dimensions": {
+      "id": 102
+    },
+    "ReactNativeStyleAttributes": {
+      "id": 103
+    },
+    "ImageStylePropTypes": {
+      "id": 104
+    },
+    "ImageResizeMode": {
+      "id": 105
+    },
+    "fbjs/lib/keyMirror.js": {
+      "id": 106
+    },
+    "LayoutPropTypes": {
+      "id": 107
+    },
+    "ShadowPropTypesIOS": {
+      "id": 108
+    },
+    "TransformPropTypes": {
+      "id": 109
+    },
+    "deprecatedPropType": {
+      "id": 110
+    },
+    "react/lib/ReactPropTypeLocations.js": {
+      "id": 111
+    },
+    "TextStylePropTypes": {
+      "id": 112
+    },
+    "ViewStylePropTypes": {
+      "id": 113
+    },
+    "matricesDiffer": {
+      "id": 114
+    },
+    "processColor": {
+      "id": 115
+    },
+    "processTransform": {
+      "id": 116
+    },
+    "MatrixMath": {
+      "id": 117
+    },
+    "sizesDiffer": {
+      "id": 118
+    },
+    "StyleSheetValidation": {
+      "id": 119
+    },
+    "View": {
+      "id": 120
+    },
+    "EdgeInsetsPropType": {
+      "id": 121
+    },
+    "createStrictShapeTypeChecker": {
+      "id": 122
+    },
+    "merge": {
+      "id": 123
+    },
+    "mergeInto": {
+      "id": 124
+    },
+    "mergeHelpers": {
+      "id": 125
+    },
+    "ReactNativeViewAttributes": {
+      "id": 126
+    },
+    "StyleSheetPropType": {
+      "id": 127
+    },
+    "TVViewPropTypes": {
+      "id": 128
+    },
+    "requireNativeComponent": {
+      "id": 129
+    },
+    "UnimplementedView": {
+      "id": 130
+    },
+    "createReactNativeComponentClass": {
+      "id": 131
+    },
+    "ReactNativeBaseComponent": {
+      "id": 132
+    },
+    "ReactNativeComponentTree": {
+      "id": 133
+    },
+    "ReactNativeEventEmitter": {
+      "id": 134
+    },
+    "EventPluginHub": {
+      "id": 135
+    },
+    "EventPluginRegistry": {
+      "id": 136
+    },
+    "EventPluginUtils": {
+      "id": 137
+    },
+    "ReactErrorUtils": {
+      "id": 138
+    },
+    "accumulateInto": {
+      "id": 139
+    },
+    "forEachAccumulated": {
+      "id": 140
+    },
+    "ReactEventEmitterMixin": {
+      "id": 141
+    },
+    "ReactNativeTagHandles": {
+      "id": 142
+    },
+    "ReactUpdates": {
+      "id": 143
+    },
+    "CallbackQueue": {
+      "id": 144
+    },
+    "PooledClass": {
+      "id": 145
+    },
+    "ReactFeatureFlags": {
+      "id": 146
+    },
+    "ReactReconciler": {
+      "id": 147
+    },
+    "ReactRef": {
+      "id": 148
+    },
+    "ReactOwner": {
+      "id": 149
+    },
+    "ReactInstrumentation": {
+      "id": 150
+    },
+    "Transaction": {
+      "id": 151
+    },
+    "ReactMultiChild": {
+      "id": 152
+    },
+    "ReactComponentEnvironment": {
+      "id": 153
+    },
+    "ReactChildReconciler": {
+      "id": 154
+    },
+    "instantiateReactComponent": {
+      "id": 155
+    },
+    "ReactCompositeComponent": {
+      "id": 156
+    },
+    "ReactNodeTypes": {
+      "id": 157
+    },
+    "checkReactTypeSpec": {
+      "id": 158
+    },
+    "ReactPropTypeLocationNames": {
+      "id": 159
+    },
+    "ReactPropTypesSecret": {
+      "id": 160
+    },
+    "fbjs/lib/shallowEqual.js": {
+      "id": 161
+    },
+    "shouldUpdateReactComponent": {
+      "id": 162
+    },
+    "ReactEmptyComponent": {
+      "id": 163
+    },
+    "ReactHostComponent": {
+      "id": 164
+    },
+    "KeyEscapeUtils": {
+      "id": 165
+    },
+    "traverseAllChildren": {
+      "id": 166
+    },
+    "ReactElementSymbol": {
+      "id": 167
+    },
+    "getIteratorFn": {
+      "id": 168
+    },
+    "flattenChildren": {
+      "id": 169
+    },
+    "insetsDiffer": {
+      "id": 170
+    },
+    "pointsDiffer": {
+      "id": 171
+    },
+    "resolveAssetSource": {
+      "id": 172
+    },
+    "AssetRegistry": {
+      "id": 173
+    },
+    "AssetSourceResolver": {
+      "id": 174
+    },
+    "react-native/local-cli/bundle/assetPathUtils.js": {
+      "id": 175
+    },
+    "verifyPropTypes": {
+      "id": 176
+    },
+    "ReactNativeART": {
+      "id": 177
+    },
+    "art/core/color.js": {
+      "id": 178
+    },
+    "ARTSerializablePath": {
+      "id": 179
+    },
+    "art/core/class.js": {
+      "id": 180
+    },
+    "art/core/path.js": {
+      "id": 181
+    },
+    "art/core/transform.js": {
+      "id": 182
+    },
+    "Button": {
+      "id": 183
+    },
+    "Text": {
+      "id": 184
+    },
+    "Touchable": {
+      "id": 185
+    },
+    "BoundingDimensions": {
+      "id": 186
+    },
+    "Position": {
+      "id": 187
+    },
+    "TVEventHandler": {
+      "id": 188
+    },
+    "fbjs/lib/TouchEventUtils.js": {
+      "id": 189
+    },
+    "mergeFast": {
+      "id": 190
+    },
+    "TouchableNativeFeedback": {
+      "id": 191
+    },
+    "ReactNative": {
+      "id": 192
+    },
+    "ReactNativeDefaultInjection": {
+      "id": 193
+    },
+    "InitializeCore": {
+      "id": 194
+    },
+    "ExceptionsManager": {
+      "id": 195
+    },
+    "symbolicateStackTrace": {
+      "id": 196
+    },
+    "getDevServer": {
+      "id": 197
+    },
+    "fetch": {
+      "id": 198
+    },
+    "whatwg-fetch/fetch.js": {
+      "id": 199
+    },
+    "RCTLog": {
+      "id": 200
+    },
+    "Alert": {
+      "id": 201
+    },
+    "AlertIOS": {
+      "id": 202
+    },
+    "Promise": {
+      "id": 203
+    },
+    "fbjs/lib/Promise.native.js": {
+      "id": 204
+    },
+    "promise/setimmediate/es6-extensions.js": {
+      "id": 205
+    },
+    "promise/setimmediate/core.js": {
+      "id": 206
+    },
+    "promise/setimmediate/done.js": {
+      "id": 207
+    },
+    "promise/setimmediate/rejection-tracking.js": {
+      "id": 208
+    },
+    "regenerator-runtime/runtime.js": {
+      "id": 209
+    },
+    "XMLHttpRequest": {
+      "id": 210
+    },
+    "RCTNetworking": {
+      "id": 211
+    },
+    "FormData": {
+      "id": 212
+    },
+    "convertRequestBody": {
+      "id": 213
+    },
+    "Geolocation": {
+      "id": 214
+    },
+    "Map": {
+      "id": 215
+    },
+    "_shouldPolyfillES6Collection": {
+      "id": 216
+    },
+    "guid": {
+      "id": 217
+    },
+    "fbjs/lib/isNode.js": {
+      "id": 218
+    },
+    "toIterator": {
+      "id": 219
+    },
+    "Set": {
+      "id": 220
+    },
+    "setupDevtools": {
+      "id": 221
+    },
+    "ReactNativeMount": {
+      "id": 222
+    },
+    "ReactNativeContainerInfo": {
+      "id": 223
+    },
+    "ReactUpdateQueue": {
+      "id": 224
+    },
+    "RCTDebugComponentOwnership": {
+      "id": 225
+    },
+    "JSInspector": {
+      "id": 226
+    },
+    "NetworkAgent": {
+      "id": 227
+    },
+    "InspectorAgent": {
+      "id": 228
+    },
+    "RCTNativeAppEventEmitter": {
+      "id": 229
+    },
+    "PerformanceLogger": {
+      "id": 230
+    },
+    "RCTEventEmitter": {
+      "id": 231
+    },
+    "ReactDefaultBatchingStrategy": {
+      "id": 232
+    },
+    "ReactNativeBridgeEventPlugin": {
+      "id": 233
+    },
+    "EventPropagators": {
+      "id": 234
+    },
+    "SyntheticEvent": {
+      "id": 235
+    },
+    "ReactNativeComponentEnvironment": {
+      "id": 236
+    },
+    "ReactNativeDOMIDOperations": {
+      "id": 237
+    },
+    "ReactNativeReconcileTransaction": {
+      "id": 238
+    },
+    "ReactNativeEventPluginOrder": {
+      "id": 239
+    },
+    "ReactNativeGlobalResponderHandler": {
+      "id": 240
+    },
+    "ReactNativeTextComponent": {
+      "id": 241
+    },
+    "ReactNativeTreeTraversal": {
+      "id": 242
+    },
+    "ReactSimpleEmptyComponent": {
+      "id": 243
+    },
+    "ResponderEventPlugin": {
+      "id": 244
+    },
+    "ResponderSyntheticEvent": {
+      "id": 245
+    },
+    "ResponderTouchHistoryStore": {
+      "id": 246
+    },
+    "accumulate": {
+      "id": 247
+    },
+    "TouchableWithoutFeedback": {
+      "id": 248
+    },
+    "react-timer-mixin/TimerMixin.js": {
+      "id": 249
+    },
+    "ensurePositiveDelayProps": {
+      "id": 250
+    },
+    "TouchableOpacity": {
+      "id": 251
+    },
+    "Animated": {
+      "id": 252
+    },
+    "AnimatedImplementation": {
+      "id": 253
+    },
+    "InteractionManager": {
+      "id": 254
+    },
+    "TaskQueue": {
+      "id": 255
+    },
+    "infoLog": {
+      "id": 256
+    },
+    "Interpolation": {
+      "id": 257
+    },
+    "NativeAnimatedHelper": {
+      "id": 258
+    },
+    "SpringConfig": {
+      "id": 259
+    },
+    "fbjs/lib/requestAnimationFrame.js": {
+      "id": 260
+    },
+    "fbjs/lib/nativeRequestAnimationFrame.js": {
+      "id": 261
+    },
+    "Easing": {
+      "id": 262
+    },
+    "bezier": {
+      "id": 263
+    },
+    "Image": {
+      "id": 264
+    },
+    "fbjs/lib/filterObject.js": {
+      "id": 265
+    },
+    "ScrollView": {
+      "id": 266
+    },
+    "PointPropType": {
+      "id": 267
+    },
+    "ScrollResponder": {
+      "id": 268
+    },
+    "Subscribable": {
+      "id": 269
+    },
+    "processDecelerationRate": {
+      "id": 270
+    },
+    "DatePickerIOS": {
+      "id": 271
+    },
+    "DrawerLayoutAndroid": {
+      "id": 272
+    },
+    "StatusBar": {
+      "id": 273
+    },
+    "ImageEditor": {
+      "id": 274
+    },
+    "ImageStore": {
+      "id": 275
+    },
+    "KeyboardAvoidingView": {
+      "id": 276
+    },
+    "LayoutAnimation": {
+      "id": 277
+    },
+    "ListView": {
+      "id": 278
+    },
+    "ListViewDataSource": {
+      "id": 279
+    },
+    "isEmpty": {
+      "id": 280
+    },
+    "StaticRenderer": {
+      "id": 281
+    },
+    "react-clone-referenced-element/cloneReferencedElement.js": {
+      "id": 282
+    },
+    "MapView": {
+      "id": 283
+    },
+    "Modal": {
+      "id": 284
+    },
+    "AppContainer": {
+      "id": 285
+    },
+    "Inspector": {
+      "id": 286
+    },
+    "InspectorOverlay": {
+      "id": 287
+    },
+    "InspectorUtils": {
+      "id": 288
+    },
+    "ElementBox": {
+      "id": 289
+    },
+    "BorderBox": {
+      "id": 290
+    },
+    "resolveBoxStyle": {
+      "id": 291
+    },
+    "InspectorPanel": {
+      "id": 292
+    },
+    "ElementProperties": {
+      "id": 293
+    },
+    "BoxInspector": {
+      "id": 294
+    },
+    "StyleInspector": {
+      "id": 295
+    },
+    "TouchableHighlight": {
+      "id": 296
+    },
+    "ensureComponentIsNative": {
+      "id": 297
+    },
+    "fbjs/lib/keyOf.js": {
+      "id": 298
+    },
+    "mapWithSeparator": {
+      "id": 299
+    },
+    "openFileInEditor": {
+      "id": 300
+    },
+    "NetworkOverlay": {
+      "id": 301
+    },
+    "WebSocketInterceptor": {
+      "id": 302
+    },
+    "XHRInterceptor": {
+      "id": 303
+    },
+    "PerformanceOverlay": {
+      "id": 304
+    },
+    "YellowBox": {
+      "id": 305
+    },
+    "I18nManager": {
+      "id": 306
+    },
+    "Navigator": {
+      "id": 307
+    },
+    "InteractionMixin": {
+      "id": 308
+    },
+    "NavigationContext": {
+      "id": 309
+    },
+    "NavigationEvent": {
+      "id": 310
+    },
+    "NavigationEventEmitter": {
+      "id": 311
+    },
+    "NavigationTreeNode": {
+      "id": 312
+    },
+    "immutable/dist/immutable.js": {
+      "id": 313
+    },
+    "NavigatorBreadcrumbNavigationBar": {
+      "id": 314
+    },
+    "NavigatorBreadcrumbNavigationBarStyles": {
+      "id": 315
+    },
+    "NavigatorNavigationBarStylesAndroid": {
+      "id": 316
+    },
+    "buildStyleInterpolator": {
+      "id": 317
+    },
+    "NavigatorNavigationBarStylesIOS": {
+      "id": 318
+    },
+    "NavigatorNavigationBar": {
+      "id": 319
+    },
+    "NavigatorSceneConfigs": {
+      "id": 320
+    },
+    "PanResponder": {
+      "id": 321
+    },
+    "TouchHistoryMath": {
+      "id": 322
+    },
+    "clamp": {
+      "id": 323
+    },
+    "rebound/rebound.js": {
+      "id": 324
+    },
+    "NavigatorIOS": {
+      "id": 325
+    },
+    "Picker": {
+      "id": 326
+    },
+    "PickerIOS": {
+      "id": 327
+    },
+    "PickerAndroid": {
+      "id": 328
+    },
+    "ProgressBarAndroid": {
+      "id": 329
+    },
+    "ProgressViewIOS": {
+      "id": 330
+    },
+    "SegmentedControlIOS": {
+      "id": 331
+    },
+    "Slider": {
+      "id": 332
+    },
+    "SnapshotViewIOS": {
+      "id": 333
+    },
+    "Switch": {
+      "id": 334
+    },
+    "RefreshControl": {
+      "id": 335
+    },
+    "SwipeableListView": {
+      "id": 336
+    },
+    "SwipeableListViewDataSource": {
+      "id": 337
+    },
+    "SwipeableRow": {
+      "id": 338
+    },
+    "TabBarIOS": {
+      "id": 339
+    },
+    "TextInput": {
+      "id": 340
+    },
+    "DocumentSelectionState": {
+      "id": 341
+    },
+    "mixInEventEmitter": {
+      "id": 342
+    },
+    "EventEmitterWithHolding": {
+      "id": 343
+    },
+    "EventHolder": {
+      "id": 344
+    },
+    "EventValidator": {
+      "id": 345
+    },
+    "copyProperties": {
+      "id": 346
+    },
+    "ToolbarAndroid": {
+      "id": 347
+    },
+    "ViewPagerAndroid": {
+      "id": 348
+    },
+    "WebView": {
+      "id": 349
+    },
+    "ActionSheetIOS": {
+      "id": 350
+    },
+    "AdSupportIOS": {
+      "id": 351
+    },
+    "AppRegistry": {
+      "id": 352
+    },
+    "BugReporting": {
+      "id": 353
+    },
+    "dumpReactTree": {
+      "id": 354
+    },
+    "getReactData": {
+      "id": 355
+    },
+    "renderApplication": {
+      "id": 356
+    },
+    "BackAndroid": {
+      "id": 357
+    },
+    "RCTRenderingPerf": {
+      "id": 358
+    },
+    "ReactPerf": {
+      "id": 359
+    },
+    "AsyncStorage": {
+      "id": 360
+    },
+    "CameraRoll": {
+      "id": 361
+    },
+    "Clipboard": {
+      "id": 362
+    },
+    "DatePickerAndroid": {
+      "id": 363
+    },
+    "ImagePickerIOS": {
+      "id": 364
+    },
+    "Linking": {
+      "id": 365
+    },
+    "NavigationExperimental": {
+      "id": 366
+    },
+    "NavigationCard": {
+      "id": 367
+    },
+    "NavigationCardStackPanResponder": {
+      "id": 368
+    },
+    "NavigationAbstractPanResponder": {
+      "id": 369
+    },
+    "NavigationCardStackStyleInterpolator": {
+      "id": 370
+    },
+    "NavigationPagerPanResponder": {
+      "id": 371
+    },
+    "NavigationPagerStyleInterpolator": {
+      "id": 372
+    },
+    "NavigationPointerEventsContainer": {
+      "id": 373
+    },
+    "NavigationAnimatedValueSubscription": {
+      "id": 374
+    },
+    "NavigationPropTypes": {
+      "id": 375
+    },
+    "NavigationCardStack": {
+      "id": 376
+    },
+    "NavigationTransitioner": {
+      "id": 377
+    },
+    "NavigationScenesReducer": {
+      "id": 378
+    },
+    "NavigationHeader": {
+      "id": 379
+    },
+    "NavigationHeaderBackButton": {
+      "id": 380
+    },
+    "react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png": {
+      "id": 381
+    },
+    "NavigationHeaderStyleInterpolator": {
+      "id": 382
+    },
+    "NavigationHeaderTitle": {
+      "id": 383
+    },
+    "react/lib/ReactComponentWithPureRenderMixin.js": {
+      "id": 384
+    },
+    "react/lib/shallowCompare.js": {
+      "id": 385
+    },
+    "NavigationStateUtils": {
+      "id": 386
+    },
+    "NetInfo": {
+      "id": 387
+    },
+    "PermissionsAndroid": {
+      "id": 388
+    },
+    "PushNotificationIOS": {
+      "id": 389
+    },
+    "Settings": {
+      "id": 390
+    },
+    "Share": {
+      "id": 391
+    },
+    "TimePickerAndroid": {
+      "id": 392
+    },
+    "Vibration": {
+      "id": 393
+    },
+    "VibrationIOS": {
+      "id": 394
+    },
+    "react/lib/LinkedStateMixin.js": {
+      "id": 395
+    },
+    "react/lib/ReactLink.js": {
+      "id": 396
+    },
+    "react/lib/ReactStateSetters.js": {
+      "id": 397
+    },
+    "react/lib/ReactFragment.js": {
+      "id": 398
+    },
+    "react/lib/update.js": {
+      "id": 399
+    },
+    "throwOnWrongReactAPI": {
+      "id": 400
+    }
+  },
+  "lastId": 400
+}
