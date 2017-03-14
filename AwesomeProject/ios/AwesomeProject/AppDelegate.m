@@ -14,22 +14,35 @@
 
 @implementation AppDelegate
 
+@synthesize rctBridge;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  NSURL *jsCodeLocation;
+  NSURL *rnCodeLocation;
 
-  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+//   rnCodeLocation = [[NSBundle mainBundle] URLForResource:@"main.ios" withExtension:@"jsbundle" subdirectory:@"RNBundle"];
+  
+  rnCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+//  rnCodeLocation = [CodePush bundleURLForResource:@"main.ios" withExtension:@"jsbundle" subdirectory:@"RNBundles"];
+
+  rctBridge = [[RCTBridge alloc] initWithBundleURL:rnCodeLocation
+                                          moduleProvider:nil
+                                           launchOptions:launchOptions];
+
+  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:rctBridge
                                                       moduleName:@"AwesomeProject"
-                                               initialProperties:nil
-                                                   launchOptions:launchOptions];
+                                               initialProperties:nil];
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
-  self.window.rootViewController = rootViewController;
+  
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+  
+  
+  self.window.rootViewController = nav;
   [self.window makeKeyAndVisible];
   return YES;
 }

@@ -6,7 +6,8 @@
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
 		"bundle-android-common": "react-native bundle --entry-file ./common.entry.js --platform android --bundle-output ./dist/android/common.android.bundle --assets-dest ./dist/android --dev false",
-		"bundle-android-a": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./dist/android/index.android.bundle --assets-dest ./dist/android --dev true"
+		"bundle-android-a": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./dist/android/index.android.bundle --assets-dest ./dist/android --dev true",
+		"build-ios": "react-native bundle --entry-file ./index.ios.js --platform ios --bundle-output ./ios/AwesomeProject/RNBundle/main.ios.jsbundle --assets-dest ./ios/AwesomeProject/RNBundle/assets --dev true"
 	},
 	"dependencies": {
 		"react": "15.4.2",

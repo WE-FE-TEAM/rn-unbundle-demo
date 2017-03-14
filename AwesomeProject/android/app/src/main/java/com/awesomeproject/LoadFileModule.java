@@ -55,7 +55,7 @@ public class LoadFileModule extends ReactContextBaseJavaModule {
     public void openFundPage(){
         final Activity activity = getCurrentActivity();
 
-        final Intent intent = new Intent(activity, FundActivity.class);
+        final Intent intent = new Intent(activity, FundActivity2.class);
 
         activity.runOnUiThread(new Runnable() {
             @Override
