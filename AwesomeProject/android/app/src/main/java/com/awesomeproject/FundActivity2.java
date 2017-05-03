@@ -12,7 +12,7 @@ import com.facebook.react.cxxbridge.CatalystInstanceImpl;
 import java.lang.reflect.Method;
 
 
-public class FundActivity2 extends ReactActivity {
+public class FundActivity2 extends LemonActivity {
 
     private static final String TAG = "FundActivity2";
 
@@ -20,20 +20,20 @@ public class FundActivity2 extends ReactActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ReactApplication app = (ReactApplication) getApplication();
-        ReactNativeHost host = app.getReactNativeHost();
-        CatalystInstanceImpl catalystInstance = (CatalystInstanceImpl)host.getReactInstanceManager().getCurrentReactContext().getCatalystInstance();
-
-        String path2 = "assets://fund.android.bundle";
-        Log.e(TAG, "加载fund.android.bundle之前");
-        try{
-            Method method = CatalystInstanceImpl.class.getDeclaredMethod("jniLoadScriptFromAssets", new Class[]{AssetManager.class, String.class});
-            method.setAccessible(true);
-            method.invoke(catalystInstance, new Object[]{ getAssets(), path2});
-        }catch(Exception e){
-            Log.e(TAG, e.getMessage(), e);
-        }
-        Log.e(TAG, "加载fund.android.bundle之后");
+//        ReactApplication app = (ReactApplication) getApplication();
+//        ReactNativeHost host = app.getReactNativeHost();
+//        CatalystInstanceImpl catalystInstance = (CatalystInstanceImpl)host.getReactInstanceManager().getCurrentReactContext().getCatalystInstance();
+//
+//        String path2 = "assets://fund.android.bundle";
+//        Log.e(TAG, "加载fund.android.bundle之前");
+//        try{
+//            Method method = CatalystInstanceImpl.class.getDeclaredMethod("jniLoadScriptFromAssets", new Class[]{AssetManager.class, String.class});
+//            method.setAccessible(true);
+//            method.invoke(catalystInstance, new Object[]{ getAssets(), path2});
+//        }catch(Exception e){
+//            Log.e(TAG, e.getMessage(), e);
+//        }
+//        Log.e(TAG, "加载fund.android.bundle之后");
     }
 
     /**
@@ -48,5 +48,10 @@ public class FundActivity2 extends ReactActivity {
     @Override
     public void onBackPressed() {
         super.invokeDefaultOnBackPressed();
+    }
+
+    protected LemonActivityDelegate createReactActivityDelegate() {
+        LemonActivityDelegate delegate = new LemonActivityDelegate(this, getMainComponentName(), "fund");
+        return delegate;
     }
 }

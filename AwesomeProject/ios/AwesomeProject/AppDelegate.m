@@ -20,9 +20,9 @@
 {
   NSURL *rnCodeLocation;
 
-//   rnCodeLocation = [[NSBundle mainBundle] URLForResource:@"main.ios" withExtension:@"jsbundle" subdirectory:@"RNBundle"];
+   rnCodeLocation = [[NSBundle mainBundle] URLForResource:@"main.ios" withExtension:@"jsbundle" subdirectory:@"RNBundle"];
   
-  rnCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+//  rnCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
 //  rnCodeLocation = [CodePush bundleURLForResource:@"main.ios" withExtension:@"jsbundle" subdirectory:@"RNBundles"];
 

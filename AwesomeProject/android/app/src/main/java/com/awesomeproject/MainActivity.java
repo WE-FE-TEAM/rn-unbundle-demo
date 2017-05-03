@@ -1,8 +1,9 @@
 package com.awesomeproject;
 
 import com.facebook.react.ReactActivity;
+import com.facebook.react.ReactActivityDelegate;
 
-public class MainActivity extends ReactActivity {
+public class MainActivity extends LemonActivity {
 
     /**
      * Returns the name of the main component registered from JavaScript.
@@ -11,5 +12,10 @@ public class MainActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
         return "AwesomeProject";
+    }
+
+    protected LemonActivityDelegate createReactActivityDelegate() {
+        LemonActivityDelegate delegate = new LemonActivityDelegate(this, getMainComponentName(), "index");
+        return delegate;
     }
 }

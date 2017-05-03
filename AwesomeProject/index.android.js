@@ -27,6 +27,10 @@ function showFundPage(){
   LoadFileHelper.openFundPage();
 }
 
+function reloadManager(){
+  LoadFileHelper.reloadReactInstanceManager();
+}
+
 export default class AwesomeProject extends Component {
   render() {
 
@@ -53,6 +57,11 @@ export default class AwesomeProject extends Component {
         <View>
           <Text style={ btnStyle } onPress={ showFundPage }>打开 基金  页面</Text>
         </View>
+
+        <View>
+          <Text style={ btnStyle } onPress={ reloadManager }>reload ReactInstanceManager</Text>
+        </View>
+
       </View>
     );
   }

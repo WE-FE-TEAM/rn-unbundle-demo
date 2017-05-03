@@ -1227,7 +1227,10 @@ babelHelpers.toConsumableArray = function (arr) {
   }
 };
 })(typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : this);
-__d(/* AwesomeProject/index.ios.js */function(global, require, module, exports) {Object.defineProperty(exports, "__esModule", {
+__d(/* AwesomeProject/fund.ios.js */function(global, require, module, exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -1236,18 +1239,6 @@ var _react = require(12     ); // 12 = react
 var _react2 = babelHelpers.interopRequireDefault(_react);
 
 var _reactNative = require(42            ); // 42 = react-native
-
-var DemoManager = _reactNative.NativeModules.DemoManager;
-
-function onClick() {
-  console.log('before DemoManager.loadFile call');
-  DemoManager.loadFile('这里传加载的JS路径');
-}
-
-function showFundPage() {
-  console.log('before native showFundPage in JS');
-  DemoManager.showFundPage();
-}
 
 var AwesomeProject = function (_Component) {
   babelHelpers.inherits(AwesomeProject, _Component);
@@ -1272,33 +1263,12 @@ var AwesomeProject = function (_Component) {
         _react2.default.createElement(
           _reactNative.Text,
           { style: styles.welcome },
-          'Welcome to React Native!'
+          'ios \u57FA\u91D1\u9875\u9762, \u52A8\u6001\u589E\u91CF\u52A0\u8F7D\u7684JS bundle'
         ),
         _react2.default.createElement(
           _reactNative.Text,
           { style: styles.instructions },
-          'To get started, edit index.ios.js'
-        ),
-        _react2.default.createElement(
-          _reactNative.Text,
-          { style: styles.instructions },
-          'Press Cmd+R to reload,',
-          '\n',
-          'Cmd+D or shake for dev menu'
-        ),
-        _react2.default.createElement(
-          _reactNative.Text,
-          { style: btnStyle, onPress: onClick },
-          '\u70B9\u51FB\u52A0\u8F7D\u57FA\u91D1\u7684bundle\u6587\u4EF6'
-        ),
-        _react2.default.createElement(
-          _reactNative.View,
-          null,
-          _react2.default.createElement(
-            _reactNative.Text,
-            { style: btnStyle, onPress: showFundPage },
-            '\u6253\u5F00 \u57FA\u91D1  \u9875\u9762'
-          )
+          'just for testing  ===='
         )
       );
     }
@@ -1328,43 +1298,12 @@ var styles = _reactNative.StyleSheet.create({
   }
 });
 
-var FundEntrance = function (_Component2) {
-  babelHelpers.inherits(FundEntrance, _Component2);
-
-  function FundEntrance() {
-    babelHelpers.classCallCheck(this, FundEntrance);
-    return babelHelpers.possibleConstructorReturn(this, (FundEntrance.__proto__ || Object.getPrototypeOf(FundEntrance)).apply(this, arguments));
-  }
-
-  babelHelpers.createClass(FundEntrance, [{
-    key: 'render',
-    value: function render() {
-
-      return _react2.default.createElement(
-        _reactNative.View,
-        { style: styles.container },
-        _react2.default.createElement(
-          _reactNative.Text,
-          { style: styles.welcome },
-          '\u57FA\u91D1\u9875\u9762'
-        ),
-        _react2.default.createElement(
-          _reactNative.Text,
-          { style: styles.instructions },
-          '\u57FA\u91D1\u7B2C\u4E8C\u884C'
-        )
-      );
-    }
-  }]);
-  return FundEntrance;
-}(_react.Component);
-
-_reactNative.AppRegistry.registerComponent('AwesomeProject', function () {
+_reactNative.AppRegistry.registerComponent('fund', function () {
   return AwesomeProject;
 });
 
-console.log('=========== index.ios 加载完成 =======');
-}, 0, null, "AwesomeProject/index.ios.js");
+console.log('ios 基金 bundle 加载完成!!!');
+}, 0, null, "AwesomeProject/fund.ios.js");
 __d(/* react/react.js */function(global, require, module, exports) {'use strict';
 
 module.exports = require(13           ); // 13 = ./lib/React

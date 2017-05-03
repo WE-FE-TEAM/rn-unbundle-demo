@@ -36,19 +36,19 @@ public class LoadFileModule extends ReactContextBaseJavaModule {
     public void loadFile(String filePath){
         Log.d(TAG, "loadFile:" + filePath);
 
-        ReactApplication app = (ReactApplication) getCurrentActivity().getApplication();
-        ReactNativeHost host = app.getReactNativeHost();
-        CatalystInstanceImpl catalystInstance = (CatalystInstanceImpl)host.getReactInstanceManager().getCurrentReactContext().getCatalystInstance();
-
-        String path2 = "assets://fund.android.bundle";
-
-        try{
-            Method method = CatalystInstanceImpl.class.getDeclaredMethod("jniLoadScriptFromAssets", new Class[]{AssetManager.class, String.class});
-            method.setAccessible(true);
-            method.invoke(catalystInstance, new Object[]{ getCurrentActivity().getAssets(), path2});
-        }catch(Exception e){
-            Log.e(TAG, e.getMessage(), e);
-        }
+//        ReactApplication app = (ReactApplication) getCurrentActivity().getApplication();
+//        ReactNativeHost host = app.getReactNativeHost();
+//        CatalystInstanceImpl catalystInstance = (CatalystInstanceImpl)host.getReactInstanceManager().getCurrentReactContext().getCatalystInstance();
+//
+//        String path2 = "assets://fund.android.bundle";
+//
+//        try{
+//            Method method = CatalystInstanceImpl.class.getDeclaredMethod("jniLoadScriptFromAssets", new Class[]{AssetManager.class, String.class});
+//            method.setAccessible(true);
+//            method.invoke(catalystInstance, new Object[]{ getCurrentActivity().getAssets(), path2});
+//        }catch(Exception e){
+//            Log.e(TAG, e.getMessage(), e);
+//        }
     }
 
     @ReactMethod
@@ -61,6 +61,19 @@ public class LoadFileModule extends ReactContextBaseJavaModule {
             @Override
             public void run() {
                 activity.startActivity(intent);
+            }
+        });
+    }
+
+    @ReactMethod
+    public void reloadReactInstanceManager(){
+        final Activity activity = getCurrentActivity();
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                LemonActivity ac = (LemonActivity) getCurrentActivity();
+
+                ac.getReactInstanceManager().recreateReactContextInBackground();
             }
         });
     }

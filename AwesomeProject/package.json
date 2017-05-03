@@ -1,25 +1,28 @@
 {
-	"name": "AwesomeProject",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest",
-		"bundle-android-common": "react-native bundle --entry-file ./common.entry.js --platform android --bundle-output ./dist/android/common.android.bundle --assets-dest ./dist/android --dev false",
-		"bundle-android-a": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./dist/android/index.android.bundle --assets-dest ./dist/android --dev true",
-		"build-ios": "react-native bundle --entry-file ./index.ios.js --platform ios --bundle-output ./ios/AwesomeProject/RNBundle/main.ios.jsbundle --assets-dest ./ios/AwesomeProject/RNBundle/assets --dev true"
-	},
-	"dependencies": {
-		"react": "15.4.2",
-		"react-native": "^0.42.0"
-	},
-	"devDependencies": {
-		"babel-jest": "19.0.0",
-		"babel-preset-react-native": "1.9.1",
-		"jest": "19.0.2",
-		"react-test-renderer": "15.4.2"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "AwesomeProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "bundle-android-common": "react-native bundle --entry-file ./common.entry.js --platform android --bundle-output ./dist/android/common.android.bundle --assets-dest ./dist/android --dev false",
+    "bundle-android-a": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./dist/android/index.android.bundle --assets-dest ./dist/android --dev true",
+    "bundle-android": "react-native bundle --entry-file ./index.android.js --platform android --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res --dev true",
+    "bundle-android-fund": "react-native bundle --entry-file ./fund.android.js --platform android --bundle-output ./android/app/src/main/assets/fund.android.bundle --assets-dest ./android/app/src/main/res --dev true",
+    "build-ios": "react-native bundle --entry-file ./index.ios.js --platform ios --bundle-output ./ios/AwesomeProject/RNBundle/main.ios.jsbundle --assets-dest ./ios/AwesomeProject/RNBundle/assets --dev true",
+    "build-ios-fund": "react-native bundle --entry-file ./fund.ios.js --platform ios --bundle-output ./ios/AwesomeProject/RNBundle/fund.ios.jsbundle --assets-dest ./ios/AwesomeProject/RNBundle/assets --dev true"
+  },
+  "dependencies": {
+    "react": "^16.0.0-alpha.6",
+    "react-native": "^0.43.4"
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "react-test-renderer": "15.4.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }

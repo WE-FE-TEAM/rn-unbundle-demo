@@ -2,11 +2,15 @@ __d(/* AwesomeProject/fund.android.js */function(global, require, module, export
   value: true
 });
 
+console.log('global.jessValue:' + global.jessValue);
+
+global.jessValue = 100;
+
 var _react = require(12     ); // 12 = react
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
 
-var _reactNative = require(42            ); // 42 = react-native
+var _reactNative = require(45            ); // 45 = react-native
 
 var AwesomeProject = function (_Component) {
   babelHelpers.inherits(AwesomeProject, _Component);
@@ -36,7 +40,7 @@ var AwesomeProject = function (_Component) {
         _react2.default.createElement(
           _reactNative.Text,
           { style: styles.instructions },
-          'just for testing'
+          'just for testing: ' + ( jessValue++ )
         )
       );
     }
@@ -45,43 +49,6 @@ var AwesomeProject = function (_Component) {
 }(_react.Component);
 
 exports.default = AwesomeProject;
-
-
-  var FundFakeApp = function (_Component) {
-    babelHelpers.inherits(FundFakeApp, _Component);
-
-    function FundFakeApp() {
-      babelHelpers.classCallCheck(this, FundFakeApp);
-      return babelHelpers.possibleConstructorReturn(this, (FundFakeApp.__proto__ || Object.getPrototypeOf(FundFakeApp)).apply(this, arguments));
-    }
-
-    babelHelpers.createClass(FundFakeApp, [{
-      key: 'render',
-      value: function render() {
-
-        var btnStyle = {
-          color: 'red',
-          fontSize: 20
-        };
-
-        return _react2.default.createElement(
-            _reactNative.View,
-            { style: styles.container },
-            _react2.default.createElement(
-                _reactNative.Text,
-                { style: styles.welcome },
-                '\u57FA\u91D1\u9875\u9762, \u52A8\u6001\u589E\u91CF\u52A0\u8F7D\u7684JS bundle'
-            ),
-            _react2.default.createElement(
-                _reactNative.Text,
-                { style: styles.instructions },
-                'just for testing'
-            )
-        );
-      }
-    }]);
-    return FundFakeApp;
-  }(_react.Component);
 
 
 var styles = _reactNative.StyleSheet.create({
@@ -107,12 +74,8 @@ _reactNative.AppRegistry.registerComponent('fund', function () {
   return AwesomeProject;
 });
 
-var now = Date.now();
-
-while( Date.now() - now < 20000){
-
-}
-
 console.log('基金 bundle 加载完成!!!');
-}, 401, null, "AwesomeProject/fund.android.js");
-;require(401);
+}, 10000, null, "AwesomeProject/fund.android.js");
+
+;require(10000);
+
