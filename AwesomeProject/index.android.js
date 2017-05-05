@@ -28,6 +28,7 @@ function showFundPage(){
 }
 
 function reloadManager(){
+  console.log('before reload ReactInstanceManager');
   LoadFileHelper.reloadReactInstanceManager();
 }
 
@@ -87,3 +88,10 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+
+
+
+console.log('index.android load finish');
+
+
+

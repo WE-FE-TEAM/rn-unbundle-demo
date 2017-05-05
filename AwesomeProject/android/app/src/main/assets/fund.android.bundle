@@ -2,15 +2,15 @@ __d(/* AwesomeProject/fund.android.js */function(global, require, module, export
   value: true
 });
 
-console.log('global.jessValue:' + global.jessValue);
-
-global.jessValue = 100;
-
 var _react = require(12     ); // 12 = react
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
 
 var _reactNative = require(45            ); // 45 = react-native
+
+console.log('global.jessValue:' + global.jessValue);
+
+global.jessValue = 100;
 
 var AwesomeProject = function (_Component) {
   babelHelpers.inherits(AwesomeProject, _Component);
@@ -40,7 +40,8 @@ var AwesomeProject = function (_Component) {
         _react2.default.createElement(
           _reactNative.Text,
           { style: styles.instructions },
-          'just for testing: ' + ( jessValue++ )
+          'just for testing ',
+          global.jessValue++
         )
       );
     }
@@ -76,6 +77,4 @@ _reactNative.AppRegistry.registerComponent('fund', function () {
 
 console.log('基金 bundle 加载完成!!!');
 }, 10000, null, "AwesomeProject/fund.android.js");
-
 ;require(10000);
-

@@ -13,6 +13,10 @@ import {
 } from 'react-native';
 
 
+console.log('global.jessValue:' + global.jessValue);
+
+global.jessValue = 100;
+
 export default class AwesomeProject extends Component {
   render() {
 
@@ -27,7 +31,7 @@ export default class AwesomeProject extends Component {
           基金页面, 动态增量加载的JS bundle
         </Text>
         <Text style={styles.instructions}>
-          just for testing
+          just for testing { global.jessValue++ }
         </Text>
 
       </View>
